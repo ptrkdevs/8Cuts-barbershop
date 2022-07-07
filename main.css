@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:wght@400;700&display=swap');
+
+
+*,*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+*, body, html {
+    padding:0;
+    margin:0;
+}
+
+body {
+    line-height: 1.4;
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body, html {
+    height: 100%;
+}
+
+
+img, svg {
+    max-width: 100%;
+    display:block;
+}
+
+
+/* utility */
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 85%;
+    margin: 0 auto;
+}
+
+
+
+.btn {
+    display: inline-block;
+}
+
+
+/* end of utility */
+
+
+.banner {
+    background: linear-gradient(rgba(0,0,0,0.5), #00000080),url(/images/banner.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+
+.banner__text {
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+.banner__text .banner__header {
+    font-size: 8rem;
+    color:  #FFD700;
+    letter-spacing: .3rem;
+    font-family: 'Kaushan Script', cursive;
+}
+
+
+
+.banner__text .banner__tagline {
+    font-size: 2.3rem;
+}
+
+
+.banner__text a {
+    margin-top: 2rem;
+    padding: .6rem 1rem;
+    border: 1px solid #FFD700;
+    background-color:#FFD700;
+    font-size: 1rem;
+    color: white;
+    position:relative;
+    z-index: 1;
+    transition: color 0.5s;
+}
+
+
+.banner__text a:hover {
+    color: #FFD700;
+    border: 1px solid black;
+}
+
+.banner__text a span {
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+    background: black;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+
+.banner__text a:hover span {
+    width: 100%;
+}
+
+
+
+/* feature */
+
+section#feature h1 {
+    margin-top: 6rem;
+    font-size: 3rem;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+
+section#feature h1, p {
+    text-align: center;
+}
+
+section#feature  p {
+    margin: 1rem 0;
+    font-size: 1rem;
+}
+
+
+
+.feature__box {
+    margin: 6rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.feature__box .feature__text {
+    text-transform: uppercase;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex: 50%;
+}
+
+.feature__box .feature__text h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+
+.feature__icon {
+    font-size: 3rem;
+    display:none;
+}
+.feature__img_box {
+    text-align: center;
+    flex: 50%;
+}
+
+.feature__box img {
+    width: 65%;
+    display:block;
+    margin: .5rem auto;
+    border-radius: 1rem;
+
+}
+
+
+/* team */
+
+section#team {
+    background: linear-gradient(rgba(0,0,0,0.9), #00000080),url(/images/banner_2.jpg);
+    background-position: center;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+section#team #sub_head {
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+section#team #heading {
+    font-size: 3rem;
+    margin: 1rem 0;
+    font-weight: 400;
+}
+
+section#team #team_desc {
+    font-size: 1.1rem;
+}
+
+section#team .barbers {
+    margin: 4rem 0;
+    display:flex;
+    padding: 2rem;
+    justify-content: space-around;
+}
+
+section#team .barbers .barber {
+    flex-basis: 25%;
+    object-fit: cover;
+    border: .1px solid #FFD700;
+    border-radius: 20px;
+    overflow: hidden;
+    
+}
+
+section#team .barbers .barber img {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+section#contact {
+    margin: 4rem 0;
+}
+
+section#contact h1{
+    font-size: 3rem;
+    font-weight: 400;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+
+section#contact .contact__ {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+
+.map {
+    flex-basis: 50%;
+    padding:4rem;
+}
+.contact__text {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 1.2rem;
+}
+
+.contact__text p {
+    padding: 1rem;
+    text-align: center;
+}
+
+.contact__text i {
+    
+    font-size: 2rem;
+}
+
+
+footer {
+    background: black;
+    padding: 3rem 0;
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 769px) {
+
+
+    body {
+        font-size: 48.5%;
+    }
+
+    .banner__text .banner__header {
+        font-size: 4rem;
+        letter-spacing: .1rem;
+        
+    }
+
+    .banner__text .banner__tagline {
+        font-size: 1.1rem;
+    }
+    
+    
+    .banner__text a {
+        font-size: .6rem;
+        
+    }
+
+
+    /* features */
+
+    section#feature h1 {
+        font-size: 2rem;
+    }
+
+    section#feature p {
+        font-size: .9rem;
+    }
+
+    .feature__box {
+        flex-direction: column-reverse;
+    }
+
+    #feature > div > div:nth-child(4) {
+        flex-direction: column;
+    }
+
+    .feature__box .feature__text {
+        margin-top: 2rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .feature__box .feature__text h2  {
+        font-size: 1rem;
+    }
+    
+    .feature__box .feature__text p {
+        font-size: .8rem;
+    }
+
+    .feature__icon {
+        display:block;
+    }
+
+        
+    .feature__box img  {
+        display:none;
+    }
+
+    section#team .barbers {
+        flex-direction: column;
+        
+    }
+
+    section#team .barbers .barber {
+        flex-basis: 100%;
+        margin: 2rem 0;
+    }
+    
+    section#team .barbers .barber img {
+        width: 100%;
+        height: 100%;
+    }
+
+    section#team #heading {
+        font-size: 2rem;
+        
+    }
+    
+    section#team #team_desc {
+        margin-top: .5rem;
+        font-size: 1rem;
+    }
+
+
+    section#contact {
+        display: none;
+    }
+    
+}
+/* header */
